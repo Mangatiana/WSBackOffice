@@ -19,7 +19,7 @@ class FOInfoController extends Controller
         //chmod('/app/public/imgs',0777);
         $dirPath = '/app/public/imgs';
         $owner = 'www-data';
-        $command = "chown -R $owner:$owner $dirPath";
+        $command = "chown -R $owner $dirPath";
         exec($command);
         $photo->move(public_path('imgs'), $filename);
         $idutilisateur =  session()->get('idutilisateur');
