@@ -10,9 +10,8 @@
 
     <title>Site d'informations sur l'intelligence artificielle</title>
 
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Site d'informations sur l'intelligence artificielle">
+    <meta name="keywords" content="IA">
 
     <!-- Mobile Specific Metas
     ================================================== -->

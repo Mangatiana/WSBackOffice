@@ -10,9 +10,8 @@
 
     <title>Site d'informations sur l'intelligence artificielle</title>
 
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Site d'informations sur l'intelligence artificielle">
+    <meta name="keywords" content="IA">
 
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -25,17 +24,17 @@
 
     <!-- Favicon
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ secure_asset('assets/img/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ secure_asset('assets/img/favicon.png') }}">
 
     <!-- Stylesheets
     ================================================== -->
     <!-- Bootstrap core CSS -->
-    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('assets/css/responsive.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -91,7 +90,7 @@
                     <div class="col-md-8">
                         @foreach($infos as $info)
                         <article class="blog-post">
-                            <img src="{{ asset('imgs/' . $info->photo) }}" class="img-res" alt="">
+                            <img src="{{ secure_asset('imgs/' . $info->photo) }}" class="img-res" alt="">
                             <div class="post-content">
                                 <h3 class="post-title"><a href="blog-post.html">{{$info->titre}}</a></h3>
                                 <p>{{$info->contenu}}</p>
@@ -176,12 +175,12 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('assets/js/bootstrap-select.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.slicknav.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.countTo.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.shuffle.min.js') }}"></script>
-    <script src="{{ asset('assets/js/script.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/bootstrap-select.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/jquery.slicknav.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/jquery.countTo.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/jquery.shuffle.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/script.js') }}"></script>
 
 </body>
 
