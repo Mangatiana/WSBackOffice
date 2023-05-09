@@ -15,7 +15,6 @@ class InfoController extends Controller
     public function insert(Request $request)
     {
         $photo=$request->file('photo');
-        chmod('/app/public/imgs',0755);
         $filename=time().'.'.$photo->getClientOriginalName();
         $photo->move(public_path('imgs'),$filename);
         $idutilisateur =  session()->get('idutilisateur');
