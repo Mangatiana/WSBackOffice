@@ -16,7 +16,7 @@ class FOInfoController extends Controller
     {
         $photo=$request->file('photo');
         $filename=time().'.'.$photo->getClientOriginalName();
-        chmod('/app/public/imgs',0755);
+        chmod('/app/public/imgs',0755,true);
         $photo->move(public_path('imgs'),$filename);
         $idutilisateur =  session()->get('idutilisateur');
         $titre = $request->input('titre');
